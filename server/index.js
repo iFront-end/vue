@@ -27,7 +27,7 @@ if (!config.IS_PRODUCTION) {
     noInfo: true
   }));
 
-  // app.use(webpackHotMiddleware(compiler));
+  app.use(webpackHotMiddleware(compiler));
 }
 
 app.get('/*', (req, res) => {
