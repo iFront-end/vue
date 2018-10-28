@@ -1,5 +1,6 @@
 const path  = require('path');
 const webpack = require('webpack');
+const UglifyJsPlugin    = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -84,8 +85,17 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
-}
+  devtool: '#eval-source-map',
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        // beautify: false,
+        extractComments: false,
+        sourceMap: true
+      })
+    ]
+  }
+};
 
 if (process.env.NODE_ENV === 'production') {
   module.exports.devtool = '#source-map'
@@ -94,12 +104,6 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
       }
     }),
     new webpack.LoaderOptionsPlugin({
