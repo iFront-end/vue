@@ -1,0 +1,12 @@
+@import "mixin";
+
+.panel {
+  background-color: $white;
+  padding: $indent-middle;
+  border-radius: $radius;
+  @include box-shadow(0, 3px, 5px, 0);
+
+  &--grid {
+    height: 100%;
+  }
+}

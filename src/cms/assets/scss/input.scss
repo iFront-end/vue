@@ -1,0 +1,21 @@
+@import "mixin";
+
+.input {
+  display: inline-block;
+  height: $input-height;
+  border: 1px solid $grey-light;
+  padding: 0 $indent-small;
+  border-radius: $radius;
+  @include transition(border-color);
+  @include transition(box-shadow);
+
+  &:focus {
+    border-color: $grey;
+    box-shadow: 0 0 3px 0 $grey-light;
+  }
+
+  &:hover {
+    border-color: $grey;
+    @include box-shadow();
+  }
+}

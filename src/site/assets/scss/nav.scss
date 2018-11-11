@@ -1,0 +1,22 @@
+.nav {
+  background: #2d363c;
+  padding: 5px 15px;
+  display: flex;
+
+  &__link {
+    background: lighten(#2d363c, 5%);
+    color: #ffffff;
+    border: 1px solid darken(#2d363c, 5%);
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-decoration: none;
+
+    & + & {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      background: lighten(#2d363c, 8%);
+    }
+  }
+}

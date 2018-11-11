@@ -1,0 +1,41 @@
+@import "mixin";
+
+.nav {
+
+  &__link {
+    color: $grey-light;
+    text-decoration: none;
+    display: flex;
+    overflow: hidden;
+    align-items: stretch;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: darken($navigation-bg, 2%);
+    }
+
+    &--active {
+      background-color: darken($navigation-bg, 2%);
+
+      .nav__content {
+        @include transform();
+      }
+    }
+  }
+
+  &__content {
+    padding: $indent-middle $indent-big;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @include transition(transform);
+
+    &:hover {
+      @include transform();
+    }
+  }
+
+  &__text {
+    margin-left: $indent-base;
+  }
+}

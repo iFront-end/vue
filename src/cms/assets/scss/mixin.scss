@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin transition($property, $time: .3s, $animate: ease-in-out, $delay: 0s) {
+  transition: $property $time $animate $delay;
+}
+
+@mixin box-shadow($x: 0, $y: 0, $radius: 3px, $stretching: 0, $color: $grey-light) {
+  box-shadow: $x $y $radius $stretching $color;
+}
+
+@mixin transform($translate: translateY(-1px), $scale: 1.08) {
+  transform: $translate scale($scale);
+}

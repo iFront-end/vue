@@ -1,0 +1,42 @@
+@import "variables";
+
+.auth {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  background: url($image-url + "auth-fon.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  &:after {
+    position: absolute;
+    content: "";
+    z-index: 0;
+    width: 100%;
+    display: block;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba($black, 0.5);
+  }
+
+  &__aside {
+    width: $auth-aside-width;
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  &__wrap {
+    padding: $indent-big;
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

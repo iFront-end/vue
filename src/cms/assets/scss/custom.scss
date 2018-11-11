@@ -1,0 +1,44 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size-base;
+  color: $text-color;
+  letter-spacing: .0125rem;
+  background-color: #d9e0e7;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: lighter;
+  margin-bottom: $indent-big;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+input, select, textarea {
+  color: $text-color;
+  letter-spacing: .0125rem;
+}
+
+button {
+  color: $text-color;
+  font-size: $font-size-base;
+  letter-spacing: .0125rem;
+}
+
+p {
+  line-height: 1.3;
+}

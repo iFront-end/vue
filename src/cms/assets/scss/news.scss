@@ -1,0 +1,38 @@
+@import "screen";
+
+.news {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__media {
+    margin-bottom: $indent-base;
+  }
+
+  &__title {
+    margin-bottom: $indent-base;
+  }
+
+  @media #{$lg} {
+    .grid--5 {
+      width: calc(100% / 3);
+    }
+
+    @media #{$md} {
+      .grid--5 {
+        width: calc(100% / 2);
+      }
+    }
+
+    @media #{$sm} {
+      .grid--5 {
+        width: calc(100% / 1);
+      }
+    }
+
+    @media #{$xs} {
+      .grid--5 {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}

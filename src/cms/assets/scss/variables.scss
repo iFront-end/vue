@@ -1,0 +1,72 @@
+// PATH
+$image-url: "../../cms/assets/images/";
+
+// COLORS
+$black: #000000;
+$white: #ffffff;
+
+$grey: #A69D9B;
+$grey-light: lighten($grey, 15%);
+$grey-dark: darken($grey, 15%);
+
+$blue: #0099cc;
+$blue-light: lighten($blue, 5%);
+$blue-dark: darken($blue, 5%);
+
+$green: #00c851;
+$green-light: lighten($green, 5%);
+$green-dark: darken($green, 5%);
+
+$red: #ff4444;
+$red-light: lighten($red, 5%);
+$red-dark: darken($red, 5%);
+
+$yellow: #ffbb33;
+$yellow-light: lighten($yellow, 5%);
+$yellow-dark: darken($yellow, 5%);
+
+$aqua: #2bbbad;
+$aqua-light: lighten($aqua, 5%);
+$aqua-dark: darken($aqua, 5%);
+
+$text-color: lighten($black, 25%);
+$navigation-bg: #2d353c;
+
+//RADIUS
+$radius: 3px;
+
+//FONT-SIZE
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-h1: 28px;
+$font-size-h2: 24px;
+$font-size-h3: 20px;
+$font-size-h4: 16px;
+
+//ELEMENT-SIZE
+$form-element-height: 34px;
+$input-height: $form-element-height;
+$select-height: $form-element-height;
+$textarea-height: $form-element-height * 2;
+
+$navigation-width: 250px;
+$header-logotype-width: $navigation-width;
+
+$auth-aside-width: 300px;
+
+$header-height: 50px;
+$content-height-indent: $header-height;
+
+//INDENT
+$indent-base: 10px;
+$indent-small: $indent-base / 2;
+$indent-middle: $indent-base + ($indent-base / 2);
+$indent-big: $indent-base * 2;
+
+//SCREEN
+$screen-extra-large: 1199px + $navigation-width;
+$screen-large: 991px + $navigation-width;
+$screen-middle: 768px + $navigation-width;
+$screen-small: 571px;
+
+

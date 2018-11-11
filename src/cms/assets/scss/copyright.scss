@@ -1,0 +1,9 @@
+@import "variables";
+
+.copyright {
+  border-top: 1px solid $grey-light;
+  padding: $indent-middle;
+  font-size: $font-size-small;
+  color: $grey;
+  background-color: $white;
+}

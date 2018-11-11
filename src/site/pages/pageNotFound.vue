@@ -1,13 +1,13 @@
 <template>
   <div>
-    <p>О нас</p>
-    <router-link tag="a" to="/">Главная</router-link>
+    <h1>404</h1>
+    <h2>Страница не найдена</h2>
   </div>
 </template>
 
 <script>
   export default {
-    name: "about"
+    name: "pageNotFound"
   }
 </script>
 

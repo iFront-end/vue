@@ -1,0 +1,17 @@
+@import "variables";
+
+.admin {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__content {
+    padding-top: $content-height-indent;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+  }
+}

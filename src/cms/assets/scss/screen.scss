@@ -1,0 +1,7 @@
+@import "variables";
+
+$xs: (max-width: $screen-small);
+$sm: (min-width: $screen-small) and (max-width: $screen-middle);
+$md: (min-width: $screen-middle) and (max-width: $screen-large);
+$lg: (min-width: $screen-large) and (max-width: $screen-extra-large);
+$xlg: (min-width: $screen-extra-large + 1);

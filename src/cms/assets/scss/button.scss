@@ -1,0 +1,58 @@
+.button {
+  display: inline-block;
+  border: none;
+  padding: $indent-base $indent-big;
+  border-radius: $radius;
+  transition: background-color .3s ease-in-out 0s;
+  background-color: $aqua;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $aqua-light;
+  }
+
+  &[disabled="disabled"] {
+    cursor: not-allowed;
+    opacity: .65;
+    pointer-events: none;
+    transition: background-color .3s ease-in-out 0s;
+    background-color: $grey-light;
+  }
+
+  &--disabled {
+
+  }
+
+  &--primary {
+    background-color: $blue;
+
+    &:hover, &:active, &:focus {
+      background-color: $blue-light;
+    }
+  }
+
+  &--success {
+    background-color: $green;
+
+    &:hover, &:active, &:focus {
+      background-color: $green-light;
+    }
+  }
+
+  &--danger{
+    background-color: $red;
+
+    &:hover, &:active, &:focus {
+      background-color: $red-light;
+    }
+  }
+
+  &--warning{
+    background-color: $yellow;
+
+    &:hover, &:active, &:focus {
+      background-color: $yellow-light;
+    }
+  }
+}

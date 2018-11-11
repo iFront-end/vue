@@ -1,0 +1,9 @@
+@import "variables";
+
+.sidebar {
+  flex-grow: 1;
+  min-width: $navigation-width;
+  max-width: $navigation-width;
+  background-color: $navigation-bg;
+  color: $grey-light;
+}

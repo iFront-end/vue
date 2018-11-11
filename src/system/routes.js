@@ -1,7 +1,12 @@
-import index from '../pages/index.vue';
-import about from '../pages/about.vue';
+import routesSite   from '../site/routes';
+import routesCMS    from '../cms/routes';
+import pageNotFound from '../site/pages/pageNotFound.vue';
 
 export const routes = [
-  { path: '/', component: index },
-  { path: '/about', component: about }
+  routesSite,
+  routesCMS,
+  {
+    path: '/*',
+    component: pageNotFound
+  }
 ];

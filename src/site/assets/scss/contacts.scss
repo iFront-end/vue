@@ -1,0 +1,24 @@
+.show-contacts-enter-active {
+  animation: show-contacts .5s;
+}
+
+.show-contacts-leave-active {
+  animation: show-contacts .5s reverse;
+}
+
+@keyframes show-contacts {
+  0% {
+    opacity: 0;
+    font-size: 0;
+  }
+
+  50% {
+    opacity: .5;
+    font-size: 150%;
+  }
+
+  100% {
+    opacity: 1;
+    font-size: 100%;
+  }
+}
