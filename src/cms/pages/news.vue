@@ -25,7 +25,7 @@
         </figcaption>
       </figure>
     </div>
-git
+
     <div class="grid--5">
       <figure class="panel panel--grid">
         <div class="news__media">
